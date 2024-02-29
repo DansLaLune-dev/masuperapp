@@ -2,7 +2,7 @@ with import <nixpkgs> {};
 
 let
   # masuperlib-src = fetchTarball "tar.gz";
-  masuperlib-src = ../masuperlib;
+  masuperlib-src = fetchTarball "https://github.com/DansLaLune-dev/masuperlib/archive/refs/tags/v0.1.tar.gz";
 
   masuperlib = callPackage masuperlib-src {};
 
